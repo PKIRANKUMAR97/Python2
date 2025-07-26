@@ -1,0 +1,10 @@
+x=100
+print(type(x))
+y=200.98
+print(type(y))
+z="wqefegtr"
+print(type(z))
+c='fjyukuikiu'
+print(type(c))
+d=False
+print(type(d))
