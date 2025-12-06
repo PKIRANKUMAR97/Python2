@@ -38,8 +38,8 @@
 #Ex5 : ord() and chr()
 # ord() --- gives equalant ASCII character value
 # chr() --- returns character represented by an ASCII number
-# print(ord('A'))
-# print(chr(65))
+# print(ord('A')) # 65
+# print(chr(65))  # A
 
 # ex 6 : max() , min(),len()
 # print(max("existed"))  # x
@@ -66,13 +66,13 @@
 
 #ex 9 : testing strings  True/False
 # s="sap hana cloud"
-# print(s.isalnum())    # False
-# print("hana".isalpha())   #Trur
-# print("2012".isdigit())   # True
+# print(s.isalnum())    # False -- checks if string contains number
+# print("hana".isalpha())   #True --- contains alphabets or not
+# print("2012".isdigit())   # True --- contains a digit or not
 # print("first Number".isidentifier()) # False -- check for keyword
-# print(s.islower()) # True
-# print("HANA".isupper())  # True
-# print(" ".isspace()) # True
+# print(s.islower()) # True -- all lower
+# print("HANA".isupper())  # True -- all upper
+# print(" ".isspace()) # True  -- contains a space
 # print(s.isspace()) # False
 
 # ex 10 : searching for Substrings
@@ -86,19 +86,19 @@
 # print(s.count("sap"))   # 2 no of occurrences
 
 # ex 11 : Converting strings
-# s = "String in PYTHON"
-# s2 = s.title()   # every first character in the word converts to Upper Case
-# print(s2)
-# s3 = s.upper()    # every character is converted to uppercase
-# print(s3)
-# s4 = s.lower()    # every character is converted to lowercase
-# print(s4)
-# s5 = s.capitalize() # only first character of string is in uppercase
-# print(s5)
-# s6 = s.swapcase()   # lower to upper ,upper to lower case
-# print(s6)
-# s7 = s.replace("in","on")
-# print(s7)
+s = "String in PYTHON"
+s2 = s.title()   # every first character in the word converts to Upper Case
+print(s2)
+s3 = s.upper()    # every character is converted to uppercase
+print(s3)
+s4 = s.lower()    # every character is converted to lowercase
+print(s4)
+s5 = s.capitalize() # only first character of string is in uppercase
+print(s5)
+s6 = s.swapcase()   # lower to upper ,upper to lower case
+print(s6)
+s7 = s.replace("in","on")
+print(s7)
 
 # EX --12 : reverse a string
 # method 1 : looping statements
