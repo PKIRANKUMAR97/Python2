@@ -139,8 +139,52 @@ o1.m1()        # we need to call explicitly
 res=o1.m2(1,2)
 print(res)
 
-# ex 8 :
+## ex 8 :
+class MyClass:
+    name="John"                         ## class variables
+    def __init__(self,name):            ## constructor is expecting one argument
+        print(name)
+        print(self.name)
+
+ob1=MyClass("David")    ## passing parameter to constructor
 
 
+##ex 9 :
+
+# req : Emp
+#    one constructor -- eid ,name , sal
+#    display() -- print eid, name ,sal
+
+class Emp:
+
+    def __init__(self,eid,name,sal):
+        self.eid= eid
+        self.name= name
+        self.sal= sal
+    def display(self):
+        print(self.eid,self.name,self.sal)
+
+ob1=Emp(101,"Bala",50000)
+ob1.display()
+
+ob2=Emp(102,"Danny",70000)
+ob2.display()
+
+####ex 10 :
+
+class Emp:
+
+    def __init__(self,eid,name,sal):
+        self.eid= eid
+        self.name= name
+        self.sal= sal
+    def __str__(self):
+        return(self.name)
+
+ob1=Emp(101,"Bala",50000)
+print(ob1)
+
+ob2=Emp(102,"Danny",70000)
+print(ob2)
 
 
