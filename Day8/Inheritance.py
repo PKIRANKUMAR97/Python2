@@ -142,20 +142,64 @@ main purpose -- code reusability , avoid duplication
 #                                 ## 30
 
 ### ex : override variables
-class Parent:
-    name="Scott"
-
-class Child(Parent):
-    name="johnny"  ## overriding the variable value
-    def test(self):
-        print(super().name)
-
-cobj=Child()
-print(cobj.name)     ## johnny
-cobj.test()        # Scott
+# class Parent:
+#     name="Scott"
+#
+# class Child(Parent):
+#     name="johnny"  ## overriding the variable value
+#     def test(self):
+#         print(super().name)
+#
+# cobj=Child()
+# print(cobj.name)     ## johnny
+# cobj.test()        # Scott
 
 
 ## ex 9 -- overriding methods
+# class Bank:
+#     def rateofinterest(self ):
+#         return 0
+#
+# class Xbank(Bank):
+#     def rateofinterest(self):
+#         return 10
+#
+# class Ybank(Bank):
+#     def rateofinterest(self):
+#         return 12
+#
+# xobj = Xbank()
+# print(xobj.rateofinterest() )     ## 10
+#
+# yobj = Ybank()
+# print(yobj.rateofinterest() )     ## 12
+
+
+### ex 10 : overloading -- polymorphism can be implemented using overloading
+
+class Human:
+    def sayhello(self,name=None):
+        if name is not None:
+            print("Hello "+ name)
+        else:
+            print("Hello")
+
+h=Human()
+h.sayhello("Aisha")
+h.sayhello()
+
+## ex 11 : overloading 2
+class Calculator:
+    def sum(self,a=0,b=0,c=0):
+        print(a+b+c)
+
+cobj = Calculator()
+cobj.sum()
+cobj.sum(10,20)
+cobj.sum(10,20,30)
+
+
+
 
 
 
