@@ -13,16 +13,16 @@ p3=300
 
 ## ex2 : access items from dict
 
-# mydict={
-#     "brand":"Ford",
-#     "model":"Mustang",
-#     "year":1964
-# }
-# print(mydict["brand"])
-# print(mydict["model"])
-## using get()
-# x=mydict.get("model")
-# print(x)
+mydict={
+    "brand":"Ford",
+    "model":"Mustang",
+    "year":1964
+}
+print(mydict["brand"])
+print(mydict["model"])
+# using get()
+x=mydict.get("model")
+print(x)
 
 ## ex 3 -- change values in dict
 # mydict={
@@ -122,18 +122,18 @@ p3=300
 # print(mydict)    # delete items , but dict variable is available with empty items
 
 ## ex 9 : copy dict
-mydict={
-    "brand":"Ford",
-    "model":"Mustang",
-    "year":1964,
-    "color":"blue"
-}
-# using copy()
-mydict2=mydict.copy()
-print(mydict2)
-# without using copy()
-mydict3 = mydict
-print(mydict3)
+# mydict={
+#     "brand":"Ford",
+#     "model":"Mustang",
+#     "year":1964,
+#     "color":"blue"
+# }
+# # using copy()
+# mydict2=mydict.copy()
+# print(mydict2) ##       {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'blue'}
+# # without using copy()
+# mydict3 = mydict   ##   {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'blue'}
+# print(mydict3)
 
 
 
