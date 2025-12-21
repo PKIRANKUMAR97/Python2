@@ -1,0 +1,14 @@
+selenium web driver --- one of the component in selenium
+WebDriver --- module
+WebDriver ---is an API
+
+
+1. download browser specific drivers
+2. setup selenium webdriver
+    a. pip install selenium
+    b . through project settings
+
+
+Test Case
+---------------
+
