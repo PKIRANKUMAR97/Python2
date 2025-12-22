@@ -1,5 +1,5 @@
 selenium web driver --- one of the component in selenium
-WebDriver --- module
+WebDriver --- module which is available in Selenium Package
 WebDriver ---is an API
 
 
@@ -11,4 +11,12 @@ WebDriver ---is an API
 
 Test Case
 ---------------
+1.  Open web browser ( chrome/ fire fox)
+2.open url -- https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+3. provide username --  Admin
+4.provide password  --  admin123
+5. click on login
+6. capture title of dashboard page (Actual  Title )
+7. verify title of page :
+8. close browser
 
