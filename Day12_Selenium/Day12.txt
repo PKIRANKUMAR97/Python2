@@ -1,0 +1,39 @@
+Locators :
+
+Identify the web elements ---- we use locators
+perform actions on web elements
+
+Locators               --  id , name, Linktext , partial linktext,Classname , tag name
+Customized locators    --  CSS Selector , XPath
+
+<input name="username" id="txtusername" type="text">
+
+input -- tag
+name, id , type  -- attribute
+"username" ,"txtusername","text" --- value
+
+<input id='qwert' name='sadase'> Name: </input>
+<a href="linl"> register</a>
+
+register -- link test
+
+driver.find_element(By.ID,"search_query").send_keys("T_Shirts")
+driver.find_element(By.NAME,"submit_search").click()
+
+class name , tag name --used to find more than one element / multiple web elements
+
+Class name --
+tag name -- a
+
+CSS selectors :
+Tag & ID :            tagname#valueofId                          input#email
+Tag & class           tagname.valueofclass                       input.inputtext _55r1 _6luy
+Tag & attribute       tagname[attribute=value]                   input[data-testid=royal-email]
+Tag,class & attribute tagname.valueofclass[attribute=value]
+                      input.inputtext[data-testid=royal-pass]
+
+
+
+XPATH :
+Absolute Xpath
+TRelative Xpath
