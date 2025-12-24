@@ -1,0 +1,25 @@
+XPath : works based on DOM structure
+---------
+1.XPath -- xml path
+2.It is a syntax or language for finding any element on the web page using xml path expression
+3.It is used to find the location of any element on webpage using HTML DOM structure
+4.It is used to navigate through elements and attributes in DOM
+5.It is an address of the element
+
+Types of Xpath:
+
+1. Absolute Xpath / Full
+
+
+
+/html/body/div[1]/header/div/div[6]/div[2]/div/div/ul/li[10]/div/a            # Full Xpath
+
+/html/body/div/div[1]/div/div[1]/div/div[1]/img
+
+2. Relative Xpath / Partial
+
+
+//*[@id="nav-xshop"]/ul/li[10]/div/a            # Relative Xpath
+
+//*[@id="app"]/div[1]/div/div[1]/div/div[1]/img
+
