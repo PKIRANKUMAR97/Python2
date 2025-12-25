@@ -7,10 +7,8 @@ XPath : works based on DOM structure
 5.It is an address of the element
 
 Types of Xpath:
-
+------------------------------------
 1. Absolute Xpath / Full
-
-
 
 /html/body/div[1]/header/div/div[6]/div[2]/div/div/ul/li[10]/div/a            # Full Xpath
 
@@ -22,4 +20,46 @@ Types of Xpath:
 //*[@id="nav-xshop"]/ul/li[10]/div/a            # Relative Xpath
 
 //*[@id="app"]/div[1]/div/div[1]/div/div[1]/img
+
+Difference b/w Absolute and relative xpath:
+------------------------------------------------
+1.absolute xpath starts from root node
+  relative xpath directly jump to element on the DOM
+
+2. in absolute xpath , we use only tags or nodes
+   in relative xpath ,we use attributes too
+
+
+
+ How to write xpaths manually ??
+ --------------------------------
+ /html/body/div[6]/header/div[1]/div[2]/div[1]/ul/li[1]/a
+
+ syntax for writing rel xpath :
+
+//tagname[@attribute='value']
+//input[@id="small-searchterms"]
+//*[@id="small-searchterms"]
+
+How to capture xpath automatically ?
+---------------------------------------
+1. firebug , firepath ---> firefox ---> not available
+2. Right click -- inspect - copy
+3. SelectorsHub
+
+//input[@placeholder='Username']
+
+
+we prefer relative xpath mostly .
+1.absolute xpath is more lengthy
+2.Relative most stable than the absolute xpath
+
+xpath options :
+-----------------------
+and
+or
+contains()
+starts-with() --
+text()
+
 
