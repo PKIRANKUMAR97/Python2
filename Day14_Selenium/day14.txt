@@ -1,0 +1,13 @@
+Xpath axes :
+-------------
+self
+parent
+child
+ancestor
+descendent
+
+following
+following-sibling
+
+preceding
+preceding-sibling
