@@ -1,0 +1,34 @@
+1. application  commands /get commands --driver
+--------------------------------------
+get() --opening application url
+title -- capture title of current webpagde
+current_url -- capture current url
+page_source --- capture source code of page
+
+
+2.conditional commands ---web elements
+---------------------------------------
+is_displayed() ---returns TRUE if particular web-element is present on the webpage or not
+is_enabled()  --- returns TRUE if particular web-element is enabled on the webpage or not
+is_selected() --- radio buttons and checkboxes i.e. returns TRUE if it is selected / returns FALSE if not selected
+
+
+3.browser commands  -- driver
+---------------------------------------
+close() --- close single browser window (where driver focussed )
+quit()----- closes multiple browser windows
+
+
+4.navigational commands --driver instance
+--------------------------
+back()
+forward()
+refresh()
+
+
+
+
+5.wait commands
+
+
+
