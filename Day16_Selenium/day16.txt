@@ -1,0 +1,14 @@
+wait commands :
+
+time.sleep() ---
+ 1.performance will be reduced
+2. if the element is not found within the time mentioned , we will get an exception
+
+1. implicit wait
+   1.performance will not be reduced (if the element is available )
+
+
+2.explicit wait   -- works based on condition
+  1. more effective  due to inbuilt exception handling
+
+
