@@ -32,3 +32,7 @@ refresh()
 
 
 
+text vs get attribute :
+
+text --- returns the inner text  of the element
+get attribute --- returns value of any attribute of web element
