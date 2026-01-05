@@ -1,0 +1,25 @@
+1. Alerts / popups
+-------------------
+alert window  is not a web element and we cannot inspect anything on this window
+
+myalert=driver.switch_to_alert
+
+myalert.text
+myalert.accept()
+myalert.dismiss()
+
+
+Authentication popup
+-----------------------
+by bypassing -- this is called as injection
+eg website : https://the-internet.herokuapp.com/basic_auth
+syntax : http://username:password @ url
+
+Example  : http://admin:admin@the-internet.herokuapp.com/basic_auth
+
+
+Frames/Iframes:
+------------------
+
+
+
