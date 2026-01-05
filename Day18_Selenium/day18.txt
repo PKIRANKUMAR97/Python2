@@ -19,7 +19,23 @@ Example  : http://admin:admin@the-internet.herokuapp.com/basic_auth
 
 
 Frames/Iframes:
-------------------
+----------------
+https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html
+
+the-internet.herokuppa.com
+
+switch_to.frame(name of frame)
+switch_to.frame(id of frame)
+switch_to.frame(webelement)
+switch_to.frame(0)        # need to go with this if we have only one frame
+
+switch_to.default_content() -- used to go back to the main menu / main page
+
+tags related to frames :
+
+frame
+iframe
+form
 
 
 
