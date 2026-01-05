@@ -16,22 +16,26 @@ driver.get("https://www.facebook.com/r.php?entry_point=login")
 driver.maximize_window()
 
 # # select option from dropdown
-dropdown_month_element=mywait.until(EC.presence_of_element_located((By.XPATH,"//select[@id='month']")))
-dropdown_month_object=Select(dropdown_month_element)
-dropdown_month_object.select_by_visible_text("Feb")
+# dropdown_month_element=mywait.until(EC.presence_of_element_located((By.XPATH,"//select[@id='month']")))
+# dropdown_month_object=Select(dropdown_month_element)
+# dropdown_month_object.select_by_visible_text("Feb")
 # dropdown_month_object.select_by_value("8")
 # dropdown_month_object.select_by_index(11)
 
 ## capture all the options and print them
-all_available_options=dropdown_month_object.options
+# all_available_options=dropdown_month_object.options
 # print(len(all_available_options))
 # for option in all_available_options:
 #     print(option.text)
 
 ## select option from dropdown without using builtin functions
-for option in all_available_options:
-    if option.text == "Nov":
-        option.click()
+# for option in all_available_options:
+#     if option.text == "Nov":
+#         option.click()
 
+
+## without using select class
+alloptions=driver.find_elements(By.XPATH,"//*[@id='month']/option")
+print(len(alloptions))
 
 time.sleep(3)
