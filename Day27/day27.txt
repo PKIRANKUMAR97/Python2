@@ -1,0 +1,70 @@
+Skip tests
+ordering
+dependent tests
+grouping
+parallel testing
+parameterization
+
+
+pytest.ini file --- contains customized markers
+
+
+
+Skipping :
+---------------
+for skipping the tests please use :  @pytest.mark.skip
+
+ordering :
+---------------------
+first we need to add the package pytest-ordering in the interpreter
+then we need to follow the below steps
+
+    @pytest.mark.fourth
+since first, second , third... all these are not considered by Pytest , we need to create pytest.ini file in the same directory and add these markers like the below
+[pytest]
+markers=
+    first
+    second
+    third
+    fourth
+    fifth
+    sixth
+
+then the above will work .
+
+we can use the following marker as well :
+
+@pytest.mark.run(order=2)     -- we can change the values based on the ordering
+
+Dependent tests:
+----------------------
+    @pytest.mark.dependency()
+    @pytest.mark.dependency(depends=['TestClassApp::test_Login'])
+    @pytest.mark.dependency(depends=['TestClassApp::test_Login', 'TestClassApp::test_search'])
+
+Grouping :
+--------------
+multiple test methods : 1, 2, 3,.......20
+some regression
+some sanity
+multiple combinations can be done with Grouping
+
+    @pytest.mark.GroupSanityCheck  -- need to add in pytest.ini file
+
+PS C:\Users\reach\PycharmProjects\Python2> py -3.13 -m pytest -v -s -m "GroupRegressionCheck" Day27\test_Grouping.py
+PS C:\Users\reach\PycharmProjects\Python2> py -3.13 -m pytest -v -s -m "GroupSanityCheck" Day27\test_Grouping.py
+
+both sanity & Regression :
+PS C:\Users\reach\PycharmProjects\Python2> py -3.13 -m pytest -v -s -m "GroupRegressionCheck and GroupSanityCheck" Day27\test_Grouping.py
+
+only sanity not regression:
+PS C:\Users\reach\PycharmProjects\Python2> py -3.13 -m pytest -v -s -m "not GroupRegressionCheck" Day27\test_Grouping.py
+
+only regression not sanity :
+PS C:\Users\reach\PycharmProjects\Python2> py -3.13 -m pytest -v -s -m "not GroupSanityCheck" Day27\test_Grouping.py
+
+Parallel Testing:
+-------------------
+we need to install a package: pytest-xdist
+
+PS C:\Users\reach\PycharmProjects\Python2> py -3.13 -m pytest -v -s -n=3  Day27\test_Parallel.py

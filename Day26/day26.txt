@@ -1,0 +1,16 @@
+(.venv) PS C:\Users\reach\PycharmProjects\Python2> pytest -v -s Day26\modules\test_login.py  ## single at a time
+
+(.venv) PS C:\Users\reach\PycharmProjects\Python2> pytest -v -s Day26\modules       ## all modules at a time
+
+-------specific module specific test method  -------------
+(.venv) PS C:\Users\reach\PycharmProjects\Python2> pytest -v -s Day26\modules\test_login.py::TestLogin::test_LoginByTwitter
+
+
+skipping :            @pytest.mark.skip
+
+ordering test methods :
+
+@pytest.mark.first
+@pytest.mark.second
+@pytest.mark.third
+

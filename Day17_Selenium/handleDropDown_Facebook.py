@@ -16,9 +16,9 @@ driver.get("https://www.facebook.com/r.php?entry_point=login")
 driver.maximize_window()
 
 # # select option from dropdown
-# dropdown_month_element=mywait.until(EC.presence_of_element_located((By.XPATH,"//select[@id='month']")))
-# dropdown_month_object=Select(dropdown_month_element)
-# dropdown_month_object.select_by_visible_text("Feb")
+dropdown_month_element=mywait.until(EC.presence_of_element_located((By.XPATH,"//select[@id='month']")))
+dropdown_month_object=Select(dropdown_month_element)
+dropdown_month_object.select_by_visible_text("Feb")
 # dropdown_month_object.select_by_value("8")
 # dropdown_month_object.select_by_index(11)
 
@@ -35,7 +35,7 @@ driver.maximize_window()
 
 
 ## without using select class
-alloptions=driver.find_elements(By.XPATH,"//*[@id='month']/option")
-print(len(alloptions))
-
+# alloptions=driver.find_elements(By.XPATH,"//*[@id='month']/option")
+# print(len(alloptions))
+#
 time.sleep(3)
