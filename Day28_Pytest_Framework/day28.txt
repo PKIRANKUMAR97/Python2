@@ -1,0 +1,25 @@
+parameterization:
+-----------------
+we can run test methods multiple times with different sets of data
+we can pass the parameters to test methods
+no need to write looping statements
+
+
+what is a fixture method ?
+
+how we can use fixture method in multiple test methods ?
+
+how fixture method returns the data ?
+
+how we can use fixture data in test methods ?
+
+passing browser name through command line ?
+
+PS C:\Users\reach\PycharmProjects\Python2> py -3.13 -m pytest -v -s Day28_Pytest_Framework\test_CommandLine.py --browser firefox
+PS C:\Users\reach\PycharmProjects\Python2> py -3.13 -m pytest -v -s Day28_Pytest_Framework\test_CommandLine.py --browser edge
+PS C:\Users\reach\PycharmProjects\Python2> py -3.13 -m pytest -v -s Day28_Pytest_Framework\test_CommandLine.py --browser chrome
+
+-------------
+Generating html reports :
+
+pytest-html package needs to be installed

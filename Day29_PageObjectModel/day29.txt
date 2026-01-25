@@ -1,0 +1,28 @@
+page object model pattern :
+------------------------------
+separate all useful page elements in separate file
+
+
+1. duplication of elements
+2. updating elements
+
+to overcome we use POM
+
+for every page we will create a separate class
+page object class contains only page elements of a particular page
+ --1. page elements    +
+   2. action methods
+
+
+1. locators
+2. constructors
+3. action methods
+
+
+
+1. in page object class ., we should have elements which are belongs to one single page
+2. we should not hardcode any data
+3. we should not include any validations in the page object class
+
+
+
