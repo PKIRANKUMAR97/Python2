@@ -1,0 +1,51 @@
+Automation Framework:
+----------------------
+Automation Framework is used for organizing project related files in proper order/ structure
+
+Objective of framework / need of framework
+
+1. Re-usability
+2. Maintainability
+
+
+
+Types of frameworks:
+-------------------------
+1.predefined framework /Readymade
+
+	unit test , pytest, behave, robot framework etc ...
+
+2.user defined / customized framework
+
+	Data driven framework
+	Keyword driven framework
+	Modular framework
+	Hybrid driven framework
+
+
+Steps/Phases:
+-----------------
+
+1. Feasibility Analysis / Research
+
+2. Choose Test cases for automation
+
+     P1. Data driven testcases / retest cases
+     P2 .Sanity/ Regression test cases
+     P3 . other test cases
+
+
+3. Designing and implementing framework
+4. Execution
+5. Maintenance
+
+Project(Application/Product)
+-------------------------------
+Open Cart (e- commerce)
+
+Frond end activity(users/customers) -- how we use the application as an user
+Backend activity (admin)            -- as an administrator , how we can do operations
+
+
+
+
