@@ -45,25 +45,25 @@ main purpose -- code reusability , avoid duplication
 
 ###ex 3 : multilevel inheritance
 
-# class A :
-#     x,y = 10,20        # class variables
-#     def m1(self):
-#         print(self.x+self.y)
-#
-# class B(A) :
-#     a,b= 200,100
-#     def m2(self):
-#         print(self.a-self.b)
-#
-# class C(B):
-#     i,j = 5 , 2
-#     def m3(self):
-#         print(self.i*self.j)
-#
-# cobj=C()
-# cobj.m1()  ## 30
-# cobj.m2()  ## 300
-# cobj.m3()  ## 7
+class A :
+    x,y = 10,20        # class variables
+    def m1(self):
+        print(self.x+self.y)
+
+class B(A) :
+    a,b= 200,100
+    def m2(self):
+        print(self.a-self.b)
+
+class C(B):
+    i,j = 5 , 2
+    def m3(self):
+        print(self.i*self.j)
+
+cobj=C()
+cobj.m1()  ## 30
+cobj.m2()  ## 100
+cobj.m3()  ## 10
 
 ### ex 4 : hierarchy inheritance
 # class A :
@@ -177,26 +177,26 @@ main purpose -- code reusability , avoid duplication
 
 ### ex 10 : overloading -- polymorphism can be implemented using overloading
 
-class Human:
-    def sayhello(self,name=None):
-        if name is not None:
-            print("Hello "+ name)
-        else:
-            print("Hello")
-
-h=Human()
-h.sayhello("Aisha")
-h.sayhello()
+# class Human:
+#     def sayhello(self,name=None):
+#         if name is not None:
+#             print("Hello "+ name)
+#         else:
+#             print("Hello")
+#
+# h=Human()
+# h.sayhello("Aisha")
+# h.sayhello()
 
 ## ex 11 : overloading 2
-class Calculator:
-    def sum(self,a=0,b=0,c=0):
-        print(a+b+c)
-
-cobj = Calculator()
-cobj.sum()
-cobj.sum(10,20)
-cobj.sum(10,20,30)
+# class Calculator:
+#     def sum(self,a=0,b=0,c=0):
+#         print(a+b+c)
+#
+# cobj = Calculator()
+# cobj.sum()
+# cobj.sum(10,20)
+# cobj.sum(10,20,30)
 
 
 
