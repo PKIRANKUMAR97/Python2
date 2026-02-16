@@ -15,10 +15,8 @@ mywait = WebDriverWait(driver,10,ignored_exceptions=[Exception])
 
 driver.get("https://myhpgas.in/myHPGas/HPGas/LPGservices.aspx")
 driver.maximize_window()
-
 driver.find_element(By.XPATH,"//input[@class='register_button']").click()
 driver.find_element(By.ID,'ContentPlaceHolder1_btnLogin').click()
-
 login_alert_hp=driver.switch_to.alert
 print(login_alert_hp.text)
 login_alert_hp.accept()
